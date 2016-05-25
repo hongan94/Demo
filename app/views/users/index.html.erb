@@ -1,11 +1,10 @@
-<% provide(:title, 'Sign up') %>
+<% provide(:title, 'Signup') %>
 <h1>Sign up</h1>
-
+<h2>Day la file index</h2>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
-      <%= pluralize(@user.errors.count, "error") %>
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
 
